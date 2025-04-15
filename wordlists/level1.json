@@ -1,10 +1,4 @@
-{
- // 複数の品詞/CEFRを持つ例
- // "book": [
- // {"pos": "noun", "cefr": "A1"},
- // {"pos": "verb", "cefr": "B1"}
- //]
- 
+{ 
 "a": [ {"pos": "determiner", "cefr": "A1"} ],
 "a.m.": [ {"pos": "adverb", "cefr": "A1"} ],
 "A.M.": [ {"pos": "adverb", "cefr": "A1"} ],
