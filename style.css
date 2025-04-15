@@ -1,0 +1,72 @@
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: #f8f9fa;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.controls {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+#wordlist-select {
+    padding: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#loading-indicator {
+    color: #888;
+    font-style: italic;
+}
+
+/* ハイライト表示エリアのスタイル */
+#highlight-area {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 5px; /* テキストエリアとの間隔 */
+    min-height: 100px; /* ある程度の高さを確保 */
+    background-color: #eee; /* 入力エリアと区別 */
+    white-space: pre-wrap; /* 改行とスペースを保持 */
+    word-wrap: break-word; /* 長い単語を折り返す */
+    line-height: inherit; /* テキストエリアと行高を合わせる */
+    font-size: inherit; /* テキストエリアとフォントサイズを合わせる */
+    font-family: inherit; /* テキストエリアとフォントを合わせる */
+}
+
+/* テキスト入力エリアのスタイル */
+#editor {
+    display: block; /* 幅100%にするため */
+    width: calc(100% - 22px); /* padding + border を考慮 */
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: inherit;
+    font-family: inherit;
+    line-height: inherit;
+    background-color: #fff;
+    outline: none;
+    resize: vertical; /* 縦方向のリサイズのみ許可 */
+}
+
+/* 単語数表示エリアのスタイル */
+#word-count {
+    margin-top: 10px;
+    text-align: right;
+    color: #555;
+    font-size: 0.9em;
+}
+
+/* 不正な単語のスタイル */
+.invalid-word {
+    color: red;
+    font-weight: bold;
+    background-color: rgba(255, 0, 0, 0.1);
+}
