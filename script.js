@@ -4,11 +4,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // 利用可能な単語リストとそのファイルパスを定義する設定配列
     // ここで定義されたものがプルダウンに表示される
     const WORDLIST_CONFIG = [
-        { name: 'Wordlist 1', file: 'wordlists/list1.json' },
-        { name: 'Wordlist 2', file: 'wordlists/list2.json' },
-        { name: 'Wordlist 3', file: 'wordlists/list3.json' },
-        { name: 'Wordlist 4', file: 'wordlists/list4.json' },
-        { name: 'Wordlist 5', file: 'wordlists/list5.json' },
+        { name: 'Level 1(A1 only)', file: 'wordlists/level1.json' },
+        { name: 'Level 2(A1-A2)', file: 'wordlists/level2.json' },
+        { name: 'Level 3(A1-B1)', file: 'wordlists/level3.json' },
+        { name: 'Level 4(A1-B2)', file: 'wordlists/level4.json' },
     ];
     // 入力後、チェック処理を開始するまでの待機時間（ミリ秒）
     const DEBOUNCE_DELAY = 750;
